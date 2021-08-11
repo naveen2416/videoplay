@@ -1,0 +1,91 @@
+/*Video*/
+header{
+    min-height: 100vh;
+    position: relative;
+    display: grid;
+    place-items: center;
+}
+.video-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -2;
+    transition: ease;
+}
+h1{
+    font-size: 70px;
+    color: white;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+    font-family: sans-serif;
+    line-height: 1.5;
+    font-weight: 600;
+}
+h1 span{
+  font-size: 100px;
+  letter-spacing: 10px;
+  color: red;
+  font-weight: 900;
+}
+/*Pre-Loader*/
+.preloader{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: white;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    visibility: visible;
+    z-index: 999;
+    transition: linear;
+}
+.hide-preloader{
+    z-index: -999;
+    visibility: hidden;
+}
+/*Switch button*/
+.switch-btn{
+    position: absolute;
+    bottom: 7%;
+    left: 7%;
+    width: 7rem;
+    height: 2rem;
+    display: flex;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: space-around;
+    border: none;
+    outline: none;
+    transition: ease;
+    background-color: white;
+}
+.switch-btn span{
+    display: inline-block;
+    font-size: 0.85rem;
+    cursor: pointer;
+    text-transform: capitalize;
+    color: red;
+    font-weight: 900;
+}
+.switch{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background:black;
+    border-radius: 10px;
+    margin: 0;
+    display: block;
+    transition: 0.5s ease;
+}
+.slide .switch{
+    left: 50%;
+}
+
